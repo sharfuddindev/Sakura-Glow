@@ -1,0 +1,139 @@
+/*--------------------------------------------------------------
+  18. Newsletter
+----------------------------------------------------------------*/
+.cs_newsletter.cs_style_1,
+.cs_newsletter.cs_style_2,
+.cs_newsletter.cs_style_3 {
+  input {
+    line-height: 1.5em;
+    height: 60px;
+    width: 100%;
+    max-width: 412px;
+    padding: 6px 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 300;
+    flex: none;
+    @media (max-width: 991px) {
+      height: 50px;
+      max-width: 100%;
+      padding: 6px 15px;
+    }
+  }
+  .cs_subscribe_form {
+    display: flex;
+    gap: 16px;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .cs_btn.cs_style_1 {
+    &:hover {
+      transform: initial;
+    }
+  }
+}
+.cs_newsletter.cs_style_1 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 67px 150px;
+  min-height: 490px;
+  align-items: center;
+  @media (max-width: 991px) {
+    min-height: initial;
+    padding: 70px 25px 80px 25px;
+    justify-content: center;
+  }
+  .cs_newsletter_title {
+    margin-bottom: 15px;
+  }
+  .cs_newsletter_subtitle {
+    margin-bottom: 30px;
+  }
+  .cs_newsletter_in {
+    @media (min-width: 992px) {
+      flex: none;
+      max-width: 650px;
+    }
+  }
+}
+.cs_newsletter.cs_style_2 {
+  padding: 58px 10% 64px;
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 991px) {
+    padding: 58px 30px 64px;
+  }
+  @media (max-width: 575px) {
+    padding: 58px 20px 64px;
+  }
+  .cs_newsletter_in {
+    position: relative;
+    z-index: 2;
+  }
+  .cs_subscribe_form {
+    justify-content: center;
+  }
+  .cs_newsletter_title {
+    margin-bottom: 40px;
+  }
+  .cs_star_shape_1 {
+    position: absolute;
+    left: 113px;
+    top: 70px;
+    animation: spin infinite linear;
+    animation-duration: 30s;
+    animation-direction: reverse;
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+  .cs_star_shape_2 {
+    position: absolute;
+    right: 142px;
+    bottom: 90px;
+    animation: rotateAnimation 6s linear infinite;
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+  .cs_star_shape_3 {
+    position: absolute;
+    right: 55px;
+    bottom: 62px;
+    animation: spin infinite linear;
+    animation-duration: 30s;
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+}
+.cs_newsletter.cs_style_3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 0 0;
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .cs_subscribe_form {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 1199px) {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  .cs_newsletter_title {
+    flex: 1;
+  }
+}

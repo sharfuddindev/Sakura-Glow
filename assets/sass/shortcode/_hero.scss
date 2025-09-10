@@ -1,0 +1,141 @@
+/*--------------------------------------------------------------
+  9. Hero
+----------------------------------------------------------------*/
+.cs_hero.cs_style_1,
+.cs_hero.cs_style_2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+
+  .cs_hero_title {
+    margin-bottom: 22px;
+  }
+  .cs_hero_subtitle {
+    margin-bottom: 35px;
+  }
+}
+.cs_hero.cs_style_1 {
+  min-height: 680px;
+  background-color: #efa9bb;
+  padding: 70px 0px 80px 0px;
+  @media (max-width: 1600px) {
+    min-height: 570px;
+  }
+  @media (max-width: 1400px) {
+    min-height: 500px;
+  }
+  @media (max-width: 991px) {
+    justify-content: flex-start;
+  }
+  .cs_hero_text {
+    width: 100%;
+    max-width: 670px;
+    flex: none;
+    padding-right: 70px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 1600px) {
+      max-width: 620px;
+    }
+    @media (max-width: 1400px) {
+      max-width: 570px;
+    }
+    @media (max-width: 991px) {
+      padding: 0 30px;
+      max-width: 540px;
+    }
+    @media (max-width: 575px) {
+      padding: 0 20px;
+      .cs_fs_24 {
+        font-size: 20px;
+      }
+    }
+  }
+  .cs_hero_subtitle {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .cs_hero_mini_img {
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+    @media (max-width: 575px) {
+      display: none;
+    }
+    img {
+      animation: anim_y 10s alternate infinite;
+    }
+  }
+}
+.cs_hero.cs_style_2 {
+  min-height: 760px;
+  background-color: #e3e5e4;
+  padding: 70px 0 80px;
+  @media (max-width: 1600px) {
+    min-height: 600px;
+  }
+  @media (max-width: 1400px) {
+    min-height: 550px;
+  }
+  .cs_hero_text {
+    max-width: 660px;
+    position: relative;
+    z-index: 2;
+  }
+  .cs_hero_subtitle {
+    max-width: 640px;
+  }
+  .cs_hero_title {
+    letter-spacing: 3px;
+  }
+  .cs_star_shape_1 {
+    position: absolute;
+    top: 18%;
+    right: 8%;
+    animation: spin infinite linear;
+    animation-duration: 25s;
+  }
+  .cs_star_shape_2 {
+    position: absolute;
+    left: 46%;
+    bottom: 15%;
+    animation: spin infinite linear;
+    animation-duration: 30s;
+    animation-direction: reverse;
+  }
+}
+.cs_hero.cs_style_3 {
+  min-height: 975px;
+  padding: 80px 0 290px 0;
+  @media (max-width: 1600px) {
+    min-height: 800px;
+  }
+  @media (max-width: 991px) {
+    min-height: 800px;
+    padding: 80px 0 90px 0;
+    min-height: 700px;
+  }
+  @media (max-width: 575px) {
+    min-height: 620px;
+  }
+  .cs_hero_text {
+    max-width: 610px;
+  }
+  .cs_hero_title {
+    margin-bottom: 34px;
+  }
+  .cs_hero_subtitle {
+    margin-bottom: 45px;
+  }
+}
+@keyframes anim_y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+}

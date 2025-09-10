@@ -1,0 +1,114 @@
+/*--------------------------------------------------------------
+  14. Card
+----------------------------------------------------------------*/
+.cs_card.cs_style_1 {
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 0 30px 0 0;
+  margin-top: -210px;
+  @media (max-width: 1400px) {
+    gap: 10px;
+    padding: 0 20px 0 0;
+  }
+  @media (max-width: 991px) {
+    flex-direction: column;
+    padding: 0;
+    gap: 30px;
+    margin-top: 80px;
+    border: 1px solid var(--border);
+    .cs_card_right {
+      padding: 0 15px 40px 15px;
+    }
+  }
+  .cs_card_img {
+    flex: none;
+    width: 690px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 418px;
+    position: relative;
+    overflow: hidden;
+    padding-right: 40px;
+    @media (max-width: 1600px) {
+      width: 620px;
+    }
+    @media (max-width: 1199px) {
+      width: 430px;
+      min-height: 380px;
+      padding-left: 10px;
+    }
+    @media (max-width: 991px) {
+      width: 100%;
+      padding: 10px 10px 0 10px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      right: 63px;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--accent-strong);
+      opacity: 0.1;
+      transform: skewX(17deg);
+      border-radius: 0 16px 16px 0;
+      @media (max-width: 991px) {
+        transform: initial;
+        right: 0;
+        border-radius: 0;
+      }
+    }
+  }
+  .cs_card_title {
+    margin-bottom: 15px;
+  }
+  .cs_card_subtitle {
+    margin-bottom: 30px;
+    letter-spacing: 2.4px;
+  }
+  .cs_countdown.cs_style_1 {
+    height: 154px;
+    max-width: 520px;
+    gap: 32px;
+    @media (max-width: 575px) {
+      gap: 22px;
+    }
+    @media (max-width: 380px) {
+      gap: 12px;
+    }
+    .cs_countdown_box {
+      height: initial;
+      flex-direction: column;
+      gap: 4px;
+      padding: 0px;
+      &:not(:last-child) {
+        &:before {
+          color: var(--white);
+          right: -20px;
+          @media (max-width: 575px) {
+            right: -15px;
+          }
+          @media (max-width: 380px) {
+            right: -9px;
+            font-size: 24px;
+          }
+        }
+      }
+      @media (max-width: 575px) {
+        min-width: 60px;
+      }
+      @media (max-width: 380px) {
+        min-width: 50px;
+      }
+    }
+    .cs_count_title {
+      color: var(--white);
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+  }
+}
