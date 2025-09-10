@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------
+>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1. Typography
+2. Preloader
+3. Spacing
+4. General
+5. Slider
+6. Video Modal
+7. Header
+8. Footer
+9. Hero
+10. Banner
+11. Iconbox
+12. Posts
+13. CTA
+14. Card
+15. Category
+16. Product Card
+17. Animation
+18. Newsletter
+--------------------------------------------------------------*/
+
+@import 'default/variable';
+@import 'default/typography';
+@import 'common/preloader';
+@import 'common/spacing';
+@import 'common/general';
+@import 'common/slider';
+@import 'common/video-modal';
+@import 'common/header';
+@import 'common/footer';
+@import 'shortcode/hero';
+@import 'shortcode/banner';
+@import 'shortcode/iconbox';
+@import 'shortcode/post';
+@import 'shortcode/cta';
+@import 'shortcode/card';
+@import 'shortcode/category';
+@import 'shortcode/product_card';
+@import 'shortcode/animation';
+@import 'shortcode/newsletter';

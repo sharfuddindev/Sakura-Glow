@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------
+  8. Footer
+----------------------------------------------------------------*/
+.cs_footer_links {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    &:not(:last-child) {
+      &::after {
+        content: '|';
+        margin: 0 10px;
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+}
+.cs_menu_widget {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+.cs_contact_widget {
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  i {
+    display: inline-flex;
+  }
+}
+.cs_bottom_footer {
+  padding: 18px 0;
+  border-top: 1px solid var(--accent);
+}
+.cs_footer_widget + .cs_footer_widget {
+  margin-top: 30px;
+}
+.cs_footer.cs_style_1 {
+  .cs_footer_row {
+    display: flex;
+    gap: 40px 20px;
+    padding: 50px 0;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+  }
+  .cs_footer_col {
+    flex: 1;
+    &:first-child {
+      flex: 1.5;
+    }
+    @media (max-width: 991px) {
+      flex: none;
+      width: calc(50% - 20px);
+    }
+    @media (max-width: 450px) {
+      flex: none;
+      width: 100%;
+    }
+  }
+  .cs_bottom_footer {
+    color: rgba(48, 48, 48, 0.75);
+  }
+}
+.cs_footer.cs_style_2 {
+  .cs_footer_row {
+    display: flex;
+    gap: 40px 20px;
+    padding: 50px 0;
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+    }
+  }
+  .cs_footer_col {
+    flex: 1;
+    @media (max-width: 991px) {
+      flex: none;
+      width: calc(50% - 20px);
+    }
+    @media (max-width: 450px) {
+      flex: none;
+      width: 100%;
+    }
+  }
+  .cs_bottom_footer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0 20px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 5px;
+    }
+  }
+  .cs_bottom_footer {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  &.cs_type_1 {
+    .cs_footer_row {
+      padding: 75px 0;
+    }
+  }
+}
+.cs_newsletter_2_wrap {
+  margin-bottom: -250px;
+
+  + .cs_footer.cs_style_2 {
+    padding-top: 250px;
+  }
+}
+.cs_sibling_newsletter {
+  padding-bottom: 245px;
+  margin-bottom: -245px;
+}
